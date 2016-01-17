@@ -2,7 +2,7 @@ html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
 abbr, acronym, address, big, cite, code, del, 
 dfn, em, img, ins, kbd, q, samp, small, strike, 
-strong, sub, sup, tt, var, b, u, i, dl, dt, dd, 
+strong, sub, sup, tt, var, b, i, dl, dt, dd, 
 ol, ul, li, fieldset, form, label, legend, table, 
 caption, tbody, tfoot, thead, tr, th, td, article, 
 aside, canvas, details, figure, figcaption, 
@@ -10,45 +10,82 @@ footer, header, hgroup, menu, nav, output,
 section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: -5;
     font-size: 100%;
-    vertical-align: baseline;
+    /*vertical-align: baseline;*/
 }
-/*html {
-	background: url(columbiacopy.jpg) no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}*/
-
-.Background {
-	-webkit-filter: blur(3px);
-    background: url(columbiacopy.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index:-1;
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
-.filter {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.2);
-	width:100%;
-	height:100%;
-	z-index:1;
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
 }
-h1{
-	font-family:'Lato';
-	text-align:center;
-	color: rgba(255,255,255,0.7);
-	font-size:150px;
-	position:relative;
-	top:230px;
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Oxygen", serif;
+  font-size: 30px;
 }
-.main-body {
-	background-color:white;
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  background-color:#51DACF;
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family:"Oxygen";
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 48px;
+  line-height: 475px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: "Oxygen";
+}
+section.module.parallax-1 {
+  background-image: url("columbiacopydarkfilter.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("../img/demo/_small/2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/demo/_small/3.jpg");
+}
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+    color:white;
+  }
+  section.module p {
+    font-size: 20px;
+    color:white;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 130px;
+  }
 }
