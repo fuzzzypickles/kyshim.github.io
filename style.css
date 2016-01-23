@@ -25,10 +25,11 @@ section, summary, time, mark, audio, video {
   SECTIONS
 ============================================================ */
 section.module:last-child {
-  margin-bottom: 0;
+  margin-bottom: -40px;
 }
 section.module h2 {
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 34px;
   font-family: "Ubuntu", serif;
   font-size: 30px;
 }
@@ -42,14 +43,20 @@ section.module p:last-child {
 }
 section.module.contentfirst {
   background-color:#51DACF;
-  padding: 162px 0;
+  padding: 30px 0;
 }
 section.module.content {
   background-color:#51DACF;
-  padding: 162px 0;
+  padding: 259px 0;
+  overflow: auto;
+}
+section.module.contentthird {
+  background-color:#51DACF;
+  padding: 120px 0;
+  overflow: auto;
 }
 section.module.parallax {
-  height: 600px;
+  height: 552px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -97,18 +104,20 @@ section.module.parallax-3 {
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
 	font-size: 130px;
+	top: 50%;
   }
 }
 .skyline {
 	background-image:url("spskyline.jpg");
 	height:100px;
 	width:100px;
-	z-index:1px;
+	z-index:2px;
 }
 h3 {
 	font-family: "Ubuntu", serif;
 	color: rgb(255,255,255);
 	font-size:25px;
+	margin-top:22px;
 }
 p {
 	font-family: "Ubuntu", serif;
@@ -118,37 +127,61 @@ p {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-.grid {
+.grid-one {
 	width: 100%;
 	height:100%;
 	margin: 0;
 	max-width: none;
 	position:absolute;
 	left:0px;
-	margin-top:-125px;
+	margin-top:-250px;
 }
 .showcase {
 	height:250px;
 	text-align:center;
 	display: block;
 	justify-content: center;
-	width:20%;
 	float:left;
+	width: calc(100%/3);
 }
-
 .col1 {
 	background: #0278AE;
 }
 .col2 {
-	background-color: black;
+	background: #1F9EC7;
 	background-size: 100%;
 }
+.col2 img {
+	margin-top: 35px;
+}
 .col3 {
-	background: #9EF5CF;
+	background: #4CB3CD;
 }
 .col4 {
 	background: #114B5F;
 }
 .col5 {
-	background: rgb(59,100,100);
+	background: #3b6464;
+}
+.col6 {
+	background: #3b6450;
+}
+.subtext {
+	margin-left: 11px;
+	margin-right: 14px;
+	margin-top: 0px;
+}
+.title {
+	min-height: 60px;
+}
+.grid-two {
+	position:absolute;
+	margin-left:auto;
+	margin-top:-11px;
+	width: 75%;
+	height: 30%;
+}
+.showcase-two {
+	justify-content: center;
+	float:left;
 }
