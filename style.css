@@ -173,9 +173,11 @@ p {
 }
 .grid-two {
 	position:absolute;
-	margin-left:auto;
+	width:72%;
+	margin: auto;
 	margin-top:-11px;
 }
 .showcase-two {
 	float:left;
+	width: 60px;
 }
