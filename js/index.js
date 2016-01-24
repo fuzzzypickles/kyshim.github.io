@@ -17,18 +17,22 @@ $(document).ready(function() {
     });
     $('.subtext').hide();
     $('.col1').mouseenter(function() {
+    	$('.col1 img').hide();
     	$('.col1 .subtext').show();
     });
     $('.col1').mouseleave(function() {
-    	$('.col1 .title').show();
+    	$('.col1 img').show();
     	$('.col1 .subtext').hide();
     });
     $('.col2').mouseenter(function() {
-    	$('.col2 .subtext').show();
+    	$('.col2 img').animate({
+    		opacity:0.6
+    	}, 100);
     });
     $('.col2').mouseleave(function() {
-    	$('.col2 .title').show();
-    	$('.col2 .subtext').hide();
+    	$('.col2 img').animate({
+    		opacity: 1
+    	}, 100);
     });
     $('.col3').mouseenter(function() {
     	$('.col3 .title').hide();
