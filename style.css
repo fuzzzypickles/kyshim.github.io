@@ -110,8 +110,15 @@ section.module.parallax-3 {
 h3 {
 	font-family: "Ubuntu", serif;
 	color: rgb(255,255,255);
-	font-size:25px;
-	margin-top:22px;
+	font-size:36px;
+	margin-top:92px;
+}
+#subtitle {
+	font-size:52px;
+	margin-top: 10px;
+}
+#jgh {
+	margin-top:78px;
 }
 p {
 	font-family: "Ubuntu", serif;
@@ -139,29 +146,29 @@ p {
 	width: calc(100%/3);
 }
 .col1 {
-	background: #0278AE;
+	background: rgb(2,120,174);
 }
 .col2 {
-	background: #1F9EC7;
+	background: rgb(31,158,199);
 	background-size: 100%;
 }
 .col1 img {
-	margin-top:10%;
+	margin-top:11%;
 }
 .col2 img {
-	margin-top: 10%;
+	margin-top: 8%;
 }
 .col3 {
-	background: #4CB3CD;
+	background: rgb(76,179,205);
 }
 .col4 {
-	background: #114B5F;
+	background: rgb(17,75,95);
 }
 .col5 {
-	background: #3b6464;
+	background: rgb(59,100,100);
 }
 .col6 {
-	background: #3b6450;
+	background: rgb(59,100,80);
 }
 .subtext {
 	margin-left: 11px;
@@ -173,11 +180,11 @@ p {
 }
 .grid-two {
 	position:absolute;
-	width:72%;
-	margin: auto;
-	margin-top:-11px;
+	max-width: 1045px;
+	margin-top:-4px;
+	margin-left:28%;
 }
 .showcase-two {
 	float:left;
-	width: 60px;
+	width: 90px;
 }
