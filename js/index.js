@@ -1,14 +1,14 @@
 $(document).ready(function() {
-	/**$('.showcase').mouseenter(function () {
-		$(this).animate({
-			opacity: 0.2
-		}, 200);
-	});
-	$('.showcase').mouseleave(function () {
-		$(this).animate({
-			opacity: 1
-		}, 200);
-	});**/
+	// $('.stars').hide();
+    $('#star1').hide();
+    $('#star2').hide();
+    $('#star').mouseenter(function() {
+        $('#star1').show();
+        $('#star2').show();
+    });
+    $('#star').mouseleave(function() {
+        $('.stars').hide();
+    });
     $('.showcase-two').mouseenter(function(){
         $(this).fadeTo(100, 0.7);
     });
@@ -24,12 +24,12 @@ $(document).ready(function() {
     	$('.col1 img').show();
     	$('.col1 .subtext').hide();
     });
-    $('.col2').mouseenter(function() {
+    $('.col2 img').mouseenter(function() {
     	$('.col2 img').animate({
     		opacity:0.6
     	}, 100);
     });
-    $('.col2').mouseleave(function() {
+    $('.col2 img').mouseleave(function() {
     	$('.col2 img').animate({
     		opacity: 1
     	}, 100);
