@@ -36,7 +36,7 @@ section.module h2 {
 }
 section.module p {
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 2vw;
   font-weight: 300;
 }
 section.module p:last-child {
@@ -95,7 +95,7 @@ section.module.parallax-3 {
 	color:white;
 }
 section.module p {
-	font-size: 32px;
+	font-size: 2vw;
 	color:white;
 }
 section.module.parallax h1 {
@@ -110,7 +110,7 @@ section.module.parallax h1 {
 h3 {
 	font-family: "Ubuntu", serif;
 	color: rgb(255,255,255);
-	font-size:36px;
+	font-size:3vw;
 	margin-top:92px;
 }
 #subtitle {
