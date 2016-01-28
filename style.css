@@ -31,7 +31,7 @@ section.module:last-child {
 section.module h2 {
   margin-top: -11px;
   margin-bottom: 12px;
-  font-family: "Ubuntu", serif;
+  font-family: "Average Sans", serif;
   font-size: 50px;
 }
 section.module p {
@@ -62,7 +62,7 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family:"Ubuntu";
+  font-family:"Average Sans";
 }
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.9);
@@ -108,9 +108,9 @@ section.module.parallax h1 {
   }
 }
 h3 {
-	font-family: "Ubuntu", serif;
+	font-family: "Average Sans", serif;
 	color: rgb(255,255,255);
-	font-size:3vw;
+	font-size:2.5vw;
 	margin-top:92px;
 }
 #subtitle {
@@ -129,7 +129,7 @@ h3 {
 	color:rgb(246,255,0);
 }
 #star {
-	z-index:1;
+	position: relative;
 }
 .stars {
 	position: absolute;
@@ -137,18 +137,17 @@ h3 {
 	z-index:0;
 }
 #star1 {
-	width: 3%;
-	margin-left:33%;
-	margin-top:-3%;
+	width: 50px;
+	top: -11px;
+	right: 18px;
 }
 #star2 {
-	width: 2%;
-	position: absolute;
-	margin-top: -19px;
-	margin-left:416px;
+	width: 23px;
+	top: -6px;
+	right: -16px;
 }
 p {
-	font-family: "Ubuntu", serif;
+	font-family: "Average Sans", serif;
 	color:rgb(255,255,255);
 	-webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
